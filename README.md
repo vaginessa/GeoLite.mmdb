@@ -4,27 +4,6 @@
 
 ## Download
 
-### URL1
-
-Binary
-
-[GeoLite2-ASN.mmdb](https://git.io/GeoLite2-ASN.mmdb)
-
-[GeoLite2-City.mmdb](https://git.io/GeoLite2-City.mmdb)
-
-[GeoLite2-Country.mmdb](https://git.io/GeoLite2-Country.mmdb)
-
-
-Gzip
-
-[GeoLite2-ASN.mmdb.gz](https://git.io/GeoLite2-ASN.mmdb.gz)
-
-[GeoLite2-City.mmdb.gz](https://git.io/GeoLite2-City.mmdb.gz)
-
-[GeoLite2-Country.mmdb.gz](https://git.io/GeoLite2-Country.mmdb.gz)
-
-### URL2
-
 Binary
 
 [GeoLite2-ASN.mmdb](https://github.com/P3TERX/GeoLite.mmdb/raw/download/GeoLite2-ASN.mmdb)
