@@ -29,6 +29,8 @@ jobs:
         wget -nv -O- "https://download.maxmind.com/app/geoip_download?edition_id=GeoLite2-Country&license_key=${{ secrets.LICENSE_KEY }}&suffix=tar.gz" | tar zxv
         mkdir -p upload
         cp -v GeoLite*/*.mmdb upload
+        gzip -9 upload/*
+        cp -v GeoLite*/*.mmdb upload
         echo "TAG_NAME=$(date +"%Y.%m.%d")" >> $GITHUB_ENV
 
     - name: Push to "download" branch
@@ -50,7 +52,7 @@ jobs:
       with:
         tag_name: ${{ env.TAG_NAME }}
         body: ${{ env.TAG_NAME }}
-        files: upload/*.mmdb
+        files: upload/*.mmdb uload/*.mmdb.gz
 
     - name: Remove old Releases
       uses: dev-drprasad/delete-older-releases@v0.2.0
